@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="199" id="KGk-i7-Jjw" customClass="EnterInforBookingCell" customModule="Book_Coworking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75O-Zc-9Vs">
+                        <rect key="frame" x="15" y="7" width="55.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number table" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq4-dF-BQP">
+                        <rect key="frame" x="15" y="32" width="290" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="pis-md-z4S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-zE-tUg">
+                        <rect key="frame" x="16" y="82" width="43.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-Kz-kAJ">
+                        <rect key="frame" x="16" y="107" width="288" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="eMr-ED-G2M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VRm-Kz-kAJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="09t-Is-Thn"/>
+                    <constraint firstItem="75O-Zc-9Vs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="HHP-sB-Ge4"/>
+                    <constraint firstItem="VRm-Kz-kAJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LGE-Le-rgb"/>
+                    <constraint firstItem="lSv-zE-tUg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NG3-Gk-3vR"/>
+                    <constraint firstItem="hq4-dF-BQP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="PPW-h9-A2u"/>
+                    <constraint firstItem="hq4-dF-BQP" firstAttribute="top" secondItem="75O-Zc-9Vs" secondAttribute="bottom" constant="7" id="Ukt-rP-ctg"/>
+                    <constraint firstItem="lSv-zE-tUg" firstAttribute="top" secondItem="hq4-dF-BQP" secondAttribute="bottom" constant="15" id="dMH-5M-skt"/>
+                    <constraint firstItem="75O-Zc-9Vs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="flR-ge-Cj2"/>
+                    <constraint firstItem="VRm-Kz-kAJ" firstAttribute="top" secondItem="lSv-zE-tUg" secondAttribute="bottom" constant="7" id="iC7-J8-aR7"/>
+                    <constraint firstAttribute="trailing" secondItem="hq4-dF-BQP" secondAttribute="trailing" constant="15" id="oln-tU-cle"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="txtNumber" destination="hq4-dF-BQP" id="fAQ-Tc-mTb"/>
+                <outlet property="txtPhone" destination="VRm-Kz-kAJ" id="vnY-In-LMo"/>
+            </connections>
+            <point key="canvasLocation" x="-143.47826086956522" y="139.95535714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

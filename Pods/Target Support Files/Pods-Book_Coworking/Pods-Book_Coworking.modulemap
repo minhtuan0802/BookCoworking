@@ -1,0 +1,6 @@
+framework module Pods_Book_Coworking {
+  umbrella header "Pods-Book_Coworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCell" customModule="Book_Coworking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRM-py-s8m">
+                        <rect key="frame" x="20" y="0.0" width="296" height="330"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFh-uA-Ueh">
+                        <rect key="frame" x="20" y="0.0" width="296" height="330"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_Toong" translatesAutoresizingMaskIntoConstraints="NO" id="gSV-To-l86">
+                                <rect key="frame" x="0.0" y="0.0" width="296" height="220"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toong Coworking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fl-ld-YU7">
+                                <rect key="frame" x="10" y="240" width="142" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qZB-7d-HrH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số 1, Thái Hà, Hà Nội" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUf-h7-Sqv">
+                                <rect key="frame" x="15" y="275" width="281" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="yQq-3h-zZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qv7-m8-9pl">
+                                <rect key="frame" x="246" y="240" width="25" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Vdk-rY-4aj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="seU-h0-MZe">
+                                <rect key="frame" x="219" y="239.5" width="22" height="20"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="i54-Gx-qLz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qv7-m8-9pl" secondAttribute="trailing" constant="25" id="0He-jw-k61"/>
+                            <constraint firstItem="gSV-To-l86" firstAttribute="leading" secondItem="jFh-uA-Ueh" secondAttribute="leading" id="0dH-fT-7hy"/>
+                            <constraint firstItem="gSV-To-l86" firstAttribute="top" secondItem="jFh-uA-Ueh" secondAttribute="top" id="3QA-iR-6Y0"/>
+                            <constraint firstItem="gSV-To-l86" firstAttribute="height" secondItem="jFh-uA-Ueh" secondAttribute="height" multiplier="2:3" id="8i9-LZ-F1P"/>
+                            <constraint firstAttribute="trailing" secondItem="tUf-h7-Sqv" secondAttribute="trailing" id="T7L-pG-WbS"/>
+                            <constraint firstItem="qv7-m8-9pl" firstAttribute="leading" secondItem="seU-h0-MZe" secondAttribute="trailing" constant="5" id="Vzr-kL-m3W"/>
+                            <constraint firstItem="tUf-h7-Sqv" firstAttribute="top" secondItem="3Fl-ld-YU7" secondAttribute="bottom" constant="15" id="jBO-uo-6fJ"/>
+                            <constraint firstItem="3Fl-ld-YU7" firstAttribute="top" secondItem="gSV-To-l86" secondAttribute="bottom" constant="20" id="nGt-MT-5OD"/>
+                            <constraint firstItem="qv7-m8-9pl" firstAttribute="top" secondItem="gSV-To-l86" secondAttribute="bottom" constant="20" id="pr5-aB-muI"/>
+                            <constraint firstItem="3Fl-ld-YU7" firstAttribute="leading" secondItem="jFh-uA-Ueh" secondAttribute="leading" constant="10" id="u6n-v7-eei"/>
+                            <constraint firstItem="tUf-h7-Sqv" firstAttribute="leading" secondItem="jFh-uA-Ueh" secondAttribute="leading" constant="15" id="uf9-Mu-cCa"/>
+                            <constraint firstItem="seU-h0-MZe" firstAttribute="top" secondItem="gSV-To-l86" secondAttribute="bottom" constant="20" id="uvm-F5-1GZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gSV-To-l86" secondAttribute="trailing" id="yGe-vr-6k5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="CRM-py-s8m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="0Xw-bJ-TyO"/>
+                <constraint firstAttribute="bottom" secondItem="CRM-py-s8m" secondAttribute="bottom" constant="20" id="3Vd-KE-qP3"/>
+                <constraint firstAttribute="trailing" secondItem="jFh-uA-Ueh" secondAttribute="trailing" constant="20" id="5m1-dx-aQy"/>
+                <constraint firstItem="jFh-uA-Ueh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="LiR-Dq-xzP"/>
+                <constraint firstAttribute="bottom" secondItem="jFh-uA-Ueh" secondAttribute="bottom" constant="20" id="WbT-jf-2ne"/>
+                <constraint firstAttribute="trailing" secondItem="CRM-py-s8m" secondAttribute="trailing" constant="20" id="Zgf-dj-1Gr"/>
+                <constraint firstItem="jFh-uA-Ueh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="stM-WD-RIt"/>
+                <constraint firstItem="CRM-py-s8m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wye-NN-vRe"/>
+            </constraints>
+            <size key="customSize" width="336" height="350"/>
+            <connections>
+                <outlet property="imgDes" destination="gSV-To-l86" id="2a0-Ix-0dw"/>
+                <outlet property="lbAddress" destination="tUf-h7-Sqv" id="7NB-OU-bUz"/>
+                <outlet property="lbNameCoworing" destination="3Fl-ld-YU7" id="ijo-88-DCy"/>
+                <outlet property="lbRate" destination="qv7-m8-9pl" id="zAB-ep-28i"/>
+                <outlet property="viewCard" destination="jFh-uA-Ueh" id="jSf-ue-9t1"/>
+                <outlet property="viewShadow" destination="CRM-py-s8m" id="c5s-hj-obz"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="164"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_Toong" width="258" height="242"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

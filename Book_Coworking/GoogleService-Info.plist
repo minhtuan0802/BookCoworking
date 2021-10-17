@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>596960374047-r49s84t322mqls3c87par3i0hilo6ukf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.596960374047-r49s84t322mqls3c87par3i0hilo6ukf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCsLq1uZ-yxqIofBgRIGIjBd8B15EH7pEI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>596960374047</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Techmaseter.Book-Coworking</string>
+	<key>PROJECT_ID</key>
+	<string>book-coworking</string>
+	<key>STORAGE_BUCKET</key>
+	<string>book-coworking.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:596960374047:ios:180b48bf0e3f2f94f6142a</string>
+</dict>
+</plist>
